@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-ynloultratech",
+  "version": "1.0.0",
+  "description": "ESLint rules for YnloUltratech javascript projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ynloultratech/eslint-config.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "YnloUltratech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ynloultratech/eslint-config/issues"
+  },
+  "homepage": "https://github.com/ynloultratech/eslint-config#README.md"
+}
