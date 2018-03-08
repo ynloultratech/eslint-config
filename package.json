@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ynloultratech/eslint-config/issues"
   },
-  "homepage": "https://github.com/ynloultratech/eslint-config#README.md"
+  "homepage": "https://github.com/ynloultratech/eslint-config#README.md",
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
 }
