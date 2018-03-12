@@ -1,5 +1,62 @@
 module.exports = {
+    extends: 'airbnb',
+    parser: 'typescript-eslint-parser',
+    parserOptions: {
+        ecmaFeatures: {
+            experimentalObjectRestSpread: true,
+            jsx: true,
+        },
+        sourceType: 'module',
+    },
     rules: {
-        indent: [2, 4, { SwitchCase: 1 }]
-    }
+        indent: [2, 4, { SwitchCase: 1 }],
+        'max-len': [2, { code: 120 }],
+        'comma-dangle': [2, {
+            functions: 'never',
+            arrays: 'always-multiline',
+            objects: 'always-multiline',
+            imports: 'always-multiline',
+        }],
+        'arrow-parens': [2, 'always'],
+        'prefer-destructuring': 'off',
+        'no-underscore-dangle': [2, { allow: ['__typename'] }],
+        'padded-blocks': [2, { classes: 'always', switches: 'always' }],
+        'newline-before-return': [2],
+        'no-return-assign': 'off',
+        'react/prefer-stateless-function': 'off',
+        'react/jsx-indent': [2, 4],
+        'react/jsx-indent-props': [2, 4],
+        'react/jsx-filename-extension': [2, { extensions: ['.tsx'] }],
+        'react/sort-comp': [
+            2,
+            {
+                order: [
+                    'type-annotations',
+                    'instance-variables',
+                    'static-methods',
+                    'lifecycle',
+                    'everything-else',
+                    'render',
+                ],
+            },
+        ],
+        'jsx-a11y/anchor-is-valid': 'off',
+        'jsx-a11y/no-autofocus': 'off',
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'import/prefer-default-export': 'off',
+        'import/extensions': 'off',
+        'import/no-extraneous-dependencies': [2, { devDependencies: true }],
+    },
+    overrides: {
+        files: ['**/*.ts', '**/*.tsx'],
+        parser: 'typescript-eslint-parser',
+        rules: {
+            'no-undef': 'off',
+            'no-unused-vars': 'off',
+            'no-restricted-globals': 'off',
+            'import/no-unresolved': 'off',
+            'no-use-before-define': 'off',
+        },
+    },
 };
